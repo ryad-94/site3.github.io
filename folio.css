@@ -1,0 +1,253 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	background-image: url(foliofd.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.page{
+	border: 5px solid white;
+	border-radius: 10px;
+	width: 1300px;
+	height: 900px;
+	font-size: 20px;
+	margin: auto;
+	box-shadow: 5px 5px 5px black;
+	padding: 20px;
+
+}
+.entete{
+	border: 5px solid white;
+	border-radius: 15px;
+	margin: 15px;
+	width: 1250px;
+	height: 100px;
+
+}
+
+.siteiframe{
+	border: 5px solid black;
+	margin:10px;
+	margin-right: 1px;
+	width:1100px;
+	height:700px;
+	position: relative;
+	left: 150px;
+	top: -300px;
+}
+.iframe{
+	border:3px solid black;
+	width:130px;
+	height: 150px;
+	position: relative;
+	left: 1100px;
+	bottom: 1000px;
+}
+
+
+
+h2{
+
+	text-align: center;
+	color: red;
+	text-decoration: underline;
+}
+.menu{
+	border: 3px solid black;
+	width: 150px;
+	height: 319px;
+	position: relative;
+	bottom: -40px;
+
+
+}
+
+nav > ul{
+margin: 0px;
+padding: 0px;
+}
+
+
+
+nav li{
+list-style-type: none;
+}
+
+
+nav > ul >li {
+float: left;
+}
+
+.submenu{
+display: none;
+}
+
+/*On rend notre case à cocher invisible*/
+
+nav input [type=checkbox]{
+display: none;
+}
+/*On cache le bouton affichant le menu mobile*/
+.menu-mobile{
+display: none;
+}
+
+nav{
+width: 100%;
+background-color: #767676;
+border: 2px solid red;
+border-radius: 20px;
+}
+
+nav > ul >li{
+float: left;
+position: relative;
+}
+
+
+nav > ul:after{
+content: "";
+display: table;
+clear: both;
+}
+
+nav a{
+display: inline-block;
+text-decoration: none;
+}
+nav > ul >li > a{
+padding: 20px 30px;
+color: #FFF;
+}
+nav li:hover .submenu{
+display: inline-block;
+position: absolute;
+top: 100%;
+left: 0px;
+padding: 0px;
+z-index: 100000;
+}
+
+.submenu li{
+border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+padding: 15px 30px;
+font-size: 13px;
+color: #222538;
+width: 120px;
+}
+
+.menu-accueil:hover{
+border-top: 5px solid #e44d26;
+background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.menu-cv:hover{
+border-top: 5px solid #0070bb;
+background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.menu-js:hover{
+border-top: 5px solid #f1dc4f;
+background-color:  RGBa(220, 220 ,220, 0.15);
+}
+
+.menu-veille:hover{
+border-top: 5px solid #bbb;
+background-color: RGBa(220, 220 ,220, 0.15);
+}
+
+.menu-ct:hover{
+	border-top: 5px solid #fff
+	 RGBa(220, 220 ,220, 0.15);
+}
+
+nav > ul > li:hover a{
+padding: 15px 30px 20px 30px;
+}
+
+.menu-accueil .submenu{
+background-color:  RGBa(220, 220 ,220, 0.15);
+}
+.menu-cv .submenu{
+background-color:  RGBa(220, 220 ,220, 0.15);
+}
+.menu-pj .submenu{
+background-color:  RGBa(220, 220 ,220, 0.15);
+}
+.menu-veille .submenu{
+background-color:  RGBa(220, 220 ,220, 0.15);
+}
+.menu-ct .submenu{
+	background-color:  RGBa(220, 220 ,220, 0.15);
+}
+
+
+.submenu li:hover a{
+color: #eee;
+font-weight: bold;
+}
+
+.menu-acceuil .submenu li:hover{
+background-color: rgb(210, 77, 60);
+}
+
+.menu-cv ;submenu li:hover{
+background-color: rgb(000, 115, 200);
+}
+
+.menu-pj .submenu li:hover{
+background-color: rgb(200, 165, 75);
+}
+
+.menu-veille .submenu li:hover{
+background-color: rgb(192, 192, 192);
+}
+
+.menu-ct .submenu li:hover{
+	background-color: rgb(205, 92, 92);
+}
+
+.menu-mobile{
+display: none;
+}
+
+
+nav input[type=checkbox]{
+display: none;
+}
+
+
+
+nav input[type=checkbox]:checked ~ ul{
+display: block;
+}
+
+
+@media screen and (max-width : 680px){
+.menu-mobile{
+display: block;
+color: #fff;
+background-color: rgba(29, 197, 151, 0.97);
+text-align: center;
+padding: 12px 0;
+}
+nav ul{
+display: none;
+}
+
+nav ul li, nav ul li a {
+width: 100%;
+text-align: center;
+}
+nav ul li a, nav ul li:hover a {
+padding: 10px 0px 10px 0px;
+}
+nav li:hover .submenu{
+display: block;
+position: static;
+}
+
